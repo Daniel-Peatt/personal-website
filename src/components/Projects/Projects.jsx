@@ -4,11 +4,18 @@ import styles from "./Projects.module.css";
 import fluxImg from "../../assets/Flux.png";
 
 function Project(props) {
+
+  function handleLinkClick() {
+    console.log("Link clicked!");
+    window.open("https://pick-o-meal-production.up.railway.app", "_blank", "noopener,noreferrer");
+  }
+
   return (
     <>
       <div
         className={styles.project}
         style={{ backgroundColor: props.backgroundColor, color: props.color }}
+        onClick={handleLinkClick}
       >
         <h1>{props.title}</h1>
         <img src={props.img} />
@@ -20,6 +27,9 @@ function Project(props) {
 }
 
 export default function Projects() {
+
+  
+
   return (
     <div className={styles.container}>
       <Project
