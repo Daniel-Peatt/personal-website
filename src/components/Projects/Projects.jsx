@@ -1,8 +1,5 @@
 import styles from "./Projects.module.css";
 
-// Images
-import fluxImg from "../../assets/flux.png";
-
 function Project(props) {
   return (
     <>
