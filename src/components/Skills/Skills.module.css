@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(88, 87, 78, 0.781);
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    box-shadow: 0px 10px 50px black inset;
+    color: rgba(250, 235, 215, 0.774);
+}
+
+.skillImages {
+    display: flex;
+    width: 425px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.skillImages img {
+    height: 80px;
+    width: 80px;
+    transition: transform 0.3s ease; /* Adds smooth scaling animation */
+}
+
+.skillImages img:hover{  
+    /* Allows the img to become larger without affecting the layout */
+    transform: scale(1.4);
+}
+
+.generatedText {
+    width: 425px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+    font-weight: bold;
+    padding: 25px;
+    white-space: pre-line;
+    font-family: "Neuton", serif;
+}
+
+/* If the screen size becomes less than 900px the CSS will change to below */
+@media (max-width: 900px) {
+    .container {
+        /* Allows the divs to stack on top of each other */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .skillImages {
+        /* Centers the images */
+        margin-left: auto;
+        margin-right: auto;  
+        width: 250px;
+        padding-top: 40px;
+        
+    }
+
+    .generatedText {
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+
+    .skillImages img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .skillImages img:hover{  
+        width: 70px;
+        height: 70px;
+    }
+}

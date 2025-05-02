@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.87);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.project {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 10px 10px 10px rgb(63, 63, 63);
+    border-radius: 10px;
+    font-family: "Neuton", serif;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0);
+    transform: translate(10px, 10px);
+}
+
+.project img {
+    width: 300px;
+}
+
+.project h1 {
+    margin: 0;  
+}
+
+.project p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0;
+    height: 160px;
+    
+}
+
+.project button {
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(180, 180, 180);
+    border: none;
+    font-family: "Neuton", serif;
+    font-size:medium;
+    letter-spacing: 2px;
+    font-weight:400;
+    cursor: pointer;
+}
+
+.project button:hover { 
+    background-color: rgba(180, 180, 180, 0.603); 
+}
