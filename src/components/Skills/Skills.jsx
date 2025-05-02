@@ -8,7 +8,7 @@ import javaScriptImg from '../../assets/javascript.png';
 import cSharpImg from '../../assets/C_Sharp.png';
 import cssImg from '../../assets/CSS.png';
 import gitImg from '../../assets/git.png';
-import gitHubImg from '../../assets/gitHub.png';
+import gitHubImg from '../../assets/github.png';
 import javaImg from '../../assets/Java.png';
 import nodeJsImg from '../../assets/Node.js.png';
 import postGresImg from '../../assets/Postgres.png';
